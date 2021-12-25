@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Zen+Maru+Gothic:wght@500&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.timer {
+  position: relative;
+  background-image: url('city_at_night.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 背景画像と文字を区別させるためのオーバーレイ */
+.timer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.countdown {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.countdown-title {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 2.5rem;
+}
+
+.times {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  font-size: 2rem;
+}
+
+.time-num {
+  font-size: 8rem;
+}
