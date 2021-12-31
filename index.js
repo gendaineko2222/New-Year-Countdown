@@ -25,6 +25,7 @@ function countDown () {
     const sec = diffTime / 1000;
     diffTime = diffTime % 1000;
 
+    $('#next-year').text(nowYear + 1)
     $('#days').text(Math.floor(day))
     $('#hours').text(zeroPadding(Math.floor(hour), 2))
     $('#minutes').text(zeroPadding(Math.floor(min), 2))
