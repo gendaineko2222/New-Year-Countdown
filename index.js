@@ -7,7 +7,7 @@ function countDown () {
 
     const nowYear = new Date().getFullYear();
     
-    const target = new Date(`2022-01-01T00:00+09:00`);
+    const target = new Date(`${nowYear + 1}-01-01T00:00+09:00`);
     const targetDate = target.getTime();
 
     let diffTime = targetDate - nowDate;
